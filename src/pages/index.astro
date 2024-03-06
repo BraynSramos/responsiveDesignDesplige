@@ -1,0 +1,155 @@
+---
+import Header from "../components/header.astro";
+import "../style/global.css";
+import Footer from "../components/footer.astro";
+---
+
+<Header />
+
+<div class="box images">
+  <div class="imgBx">
+    <img class="imge" src="img/num_1.jpg" alt="" />
+  </div>
+  <div class="imgBx">
+    <img class="imge" src="img/num_2.jpg" alt="" />
+  </div>
+  <div class="imgBx">
+    <img class="imge" src="img/num_3.png" alt="" />
+  </div>
+</div>
+
+<!--select -2-->
+<section class="banner">
+  <div class="box content">
+    <div class="">
+      <h2>Responsive Design</h2>
+      <p>Elevando la Experiencia Digital a Nuevos Horizontes</p>
+    </div>
+  </div>
+  <div class="box images">
+    <div class="imgBx">
+      <img class="imge" src="img/num_1.jpg" alt="" />
+    </div>
+    <div class="imgBx">
+      <img class="imge" src="img/num_2.jpg" alt="" />
+    </div>
+    <div class="imgBx">
+      <img class="imge" src="img/num_3.png" alt="" />
+    </div>
+  </div>
+</section>
+
+<div class="box images">
+  <div class="imgBx">
+    <img class="imge" src="img/num_1.jpg" alt="" />
+  </div>
+  <div class="imgBx">
+    <img class="imge" src="img/num_2.jpg" alt="" />
+  </div>
+  <div class="imgBx">
+    <img class="imge" src="img/num_3.png" alt="" />
+  </div>
+</div>
+
+<!--select -2-->
+<section class="banner">
+  <div class="box content">
+    <div class="card1">
+      <p class="header1">Diseño a medida</p>
+      <div class="main-content1">
+        <p class="heading1">No simplemente construimos sitios web</p>
+      </div>
+      <div class="footer1"></div>
+    </div>
+  </div>
+
+  <div class="box2 content">
+    <div class="">
+      <h2>En Responsive Design</h2>
+      <div class="main-content1">
+        <p class="pfo">
+          creamos experiencias digitales cautivadoras. Somos una agencia
+          creativa especializada en diseño web, comprometida con la excelencia,
+          la innovación y la conexión emocional con el público.
+        </p>
+      </div>
+      <button>
+        <span class="button_top">Mas Informacion</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<Footer />
+
+<style>
+  body.dark .card1 {
+    background: #000000;
+    color: #ffffff;
+  }
+  .pfo {
+    padding: 10px;
+  }
+
+  .card1 {
+    width: 320px;
+    height: 350px;
+    padding: 20px;
+    color: white;
+    background: transparent;
+    border-radius: 12px;
+    border: 2px solid #550197;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transform-origin: center center;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 12px;
+    background-color: #550197;
+    rotate: 344deg;
+    box-shadow: 0px 3px 187.5px 7.5px #5601979a;
+  }
+
+  .card1 .main-content1 {
+    flex: 1;
+  }
+
+  .header1 {
+    margin-bottom: 24px;
+  }
+
+  .card1 .heading1 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  .card1 .footer1 {
+    font-weight: 400;
+    margin-right: 4px;
+  }
+
+  /*.card1:hover {
+  border-radius: 12px;
+  background-color: #550197;
+  scale: 0.95;
+  rotate: 5deg;
+  box-shadow: 0px 3px 187.5px 7.5px #5601979a;
+}*/
+  @media (max-width: 991px) {
+    .card1 {
+      width: 547px;
+      height: 547px;
+    }
+    .banner2 .box2 {
+      height: 48vh;
+    }
+  }
+</style>
+<script>
+  const btnSwitch = document.querySelector("#switch");
+  btnSwitch.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    btnSwitch.classList.toggle("active");
+  });
+</script>
